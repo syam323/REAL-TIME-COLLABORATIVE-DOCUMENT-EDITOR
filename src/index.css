@@ -1,0 +1,208 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+body ,html{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.app-container {
+  display: flex;
+  height: 100vh;
+
+}
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: #f3f7f7;
+  color: rgb(21, 20, 20);
+  /* padding: 5px; */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+.top-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding:2px 5px;
+  /* margin: 5px; */
+  /* background-color: aliceblue; */
+}
+.document-finding-input-field{
+  width: 80%;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  /* cursor: pointer; */
+  border: none;
+  background-color: rgb(239, 244, 242);
+  color: rgb(9, 29, 44);
+}
+.document-create-btn{
+  flex: 1;
+  font-size: 25px;
+  padding: 1px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  
+  /* font-size: 30px; */
+
+}
+.document-list-box{
+  background-color: #071a1a;
+  flex: 1;
+
+}
+.document-list{
+  background-color: rgb(6, 43, 51);
+  list-style: none;
+  padding: 0px 5px;
+  /* border-bottom: 0.2px solid rgba(255, 255, 255, 0.285); */
+  cursor: pointer;
+  font-size: 15px;
+  overflow-x:hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.document-list button{
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 0px;
+  background:none;
+  cursor: pointer;
+}
+.document-list:hover{
+  background-color: rgb(10, 33, 38);
+}
+
+.main-content {
+  margin: 0px;
+  padding: 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking of children */
+  height: 100%;
+  background-color: #f4f4f4;
+  /* padding: 20px; */
+  background-color: rgb(255, 248, 248);
+}
+
+.right-container {
+  width: 20%; /* Fixed width as per your requirement */
+  background-color: rgb(13, 37, 50);
+  padding: 0; /* Ensures no padding interferes with child width */
+  margin: 0; /* Removes margin that could affect alignment */
+  display: flex; /* Optional: Ensures proper child alignment */
+  flex-direction: column; /* Stack child elements vertically */
+  /* box-sizing: border-box; Ensures padding doesn't add extra width */
+}
+
+.top-fields {
+  display: flex; /* Ensures flexibility of child elements */
+  justify-content: space-between; /* Space between items */
+  gap: 5px; /* Space between child elements */
+  width: 100%; /* Makes .top-fields span the full width of the parent */
+  margin: 0; /* No additional spacing */
+  padding: 5px 10px; /* Padding inside the .top-fields */
+  /* background-color: blue; Background for visualization */
+  box-sizing: border-box;
+}
+
+
+
+.top-fields input{
+  flex: 1;
+font-size: 15px;
+padding: 0px 10px;
+  
+}
+.top-fields button{
+  width: 50px;
+  font-size: 15px;
+  padding: 5px;
+
+}
+
+.linked-document-list-box{
+  display: flex;
+  flex-direction: column;
+  /* Ensures flexibility of child elements */
+  /* justify-content: space-between; Space between items */
+  /* gap: 5px; Space between child elements */
+  width: 100%; /* Makes .top-fields span the full width of the parent */
+  margin: 0; /* No additional spacing */
+  padding: 5px 10px; /* Padding inside the .top-fields */
+  /* background-color: blue; Background for visualization */
+  box-sizing: border-box;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Hides scroll bar in IE and Edge */
+  scrollbar-width: none;
+
+}
+.linked-document-list-box .real-time-box{
+display: flex;
+flex-direction: column;
+background-color: rgb(255, 255, 255);
+width: 100%;
+margin-bottom: 5px;
+padding: 10px;
+border-radius: 10px;
+box-sizing: border-box;
+
+
+
+}
+
+.right-bar-button-box
+{
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 10px 0px; */
+  margin-top: 5px;
+
+}
+
+.real-time-box h4{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(230, 233, 235);
+}
+
+.real-time-box span{
+  margin: 0px 5px;
+  font-size: 10px;
+  padding: 3px;
+  color: rgb(3, 73, 73);
+  text-decoration: none;
+  border: 1px solid rgb(119, 118, 118);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-bar{
+  background-color: rgb(19, 61, 61);
+  height: 30px;
+  /* border-bottom: 1px solid white; */
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+}
+.status-bar p{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}

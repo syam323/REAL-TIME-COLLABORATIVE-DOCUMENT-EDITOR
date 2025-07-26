@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+
+  .open-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .open-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-box {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .popup-box h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #132531;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .cancel-button,
+  .okay-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #7a5941;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .okay-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .okay-button:hover {
+    background-color: #218838;
+  }
+  
